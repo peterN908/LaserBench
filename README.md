@@ -94,34 +94,4 @@ Visit `http://localhost:3000` to:
 
 Results are saved to `scripts/results/` as JSON files with accuracy metrics per model.
 
-### Supported Models
-
-**Anthropic:**
-- Claude Sonnet 4.5
-- Claude Opus 4.5
-
-**Google:**
-- Gemini 3 Pro (with thinking)
-- Gemini Flash
-- Gemini 2.5 Pro
-- Gemini Flash Lite
-
-**OpenAI:**
-- GPT-5.1 / o-series models
-
-### Sample Results (Large Puzzles, n=20)
-
-| Model | Accuracy |
-|-------|----------|
-| Gemini 3 Pro Preview | 100% |
-| Gemini Flash | 90% |
-| Gemini 2.5 Pro | 85% |
-| Gemini Flash Lite | 70% |
-
-## License
-
-MIT
-
----
-
 Built for evaluating LLM spatial reasoning capabilities.
