@@ -31,6 +31,7 @@ interface BenchmarkResult {
   correct: number;
   total: number;
   provider: string;
+  size?: "large" | "extreme";
 }
 
 function colToLetter(col: number): string {
@@ -59,10 +60,11 @@ const PUZZLE_CONFIG: Record<PuzzleSize, { rows: [number, number]; cols: [number,
 
 // Benchmark results from testing
 const BENCHMARK_RESULTS: BenchmarkResult[] = [
+  { model: "Gemini 3 Flash", accuracy: 100, correct: 10, total: 10, provider: "Google" },
   { model: "Gemini 3 Pro", accuracy: 94, correct: 47, total: 50, provider: "Google" },
   { model: "Claude Opus 4.5", accuracy: 74, correct: 37, total: 50, provider: "Anthropic" },
   { model: "Claude Sonnet 4.5", accuracy: 52, correct: 26, total: 50, provider: "Anthropic" },
-  { model: "Gemini Flash", accuracy: 42, correct: 21, total: 50, provider: "Google" },
+  { model: "Gemini 2.5 Flash", accuracy: 42, correct: 21, total: 50, provider: "Google" },
   { model: "GPT-5.1", accuracy: 26, correct: 13, total: 50, provider: "OpenAI" },
 ];
 

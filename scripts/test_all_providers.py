@@ -462,7 +462,8 @@ MODELS = {
     # "claude-opus-4-5": ("anthropic", "claude-opus-4-5"),
     # Google Gemini
     # "gemini-2.5-pro": ("gemini", "models/gemini-2.5-pro"),
-    "gemini-3-pro": ("gemini", "models/gemini-3-pro-preview"),
+    # "gemini-3-pro": ("gemini", "models/gemini-3-pro-preview"),
+    "gemini-3-flash": ("gemini", "gemini-3-flash-preview"),
     # "gemini-flash": ("gemini", "models/gemini-flash-latest"),
     # "gemini-flash-lite": ("gemini", "models/gemini-flash-lite-latest"),
 }
@@ -555,6 +556,6 @@ def save_results(all_results: dict):
 
 
 if __name__ == "__main__":
-    results = run_benchmark(num_puzzles=10, size="extreme")
+    results = run_benchmark(num_puzzles=10, size="large")
     if results:
         save_results(results)
